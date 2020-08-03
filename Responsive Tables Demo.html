@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://elvery.net/demo/responsive-tables/#unseen -->
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Responsive Tables Demo</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="description" content="A demo of some techniques for developing responsive tables.">
+	
+	<meta name="author" content="Simon Elvery">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link href="flip-scroll.css" rel="stylesheet">
+	
+	
+</head>
+<body>
+	<!--<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid"><a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </a>
+		          <a class="brand" href="https://elvery.net/demo/responsive-tables/#">Responsive Tables</a>
+				
+				<div class="nav-collapse">
+					<p class="navbar-text pull-right">collated by <a href="http://elvery.net/">Simon Elvery</a></p>
+				</div><!--/.nav-collapse --*>
+			</div>
+		</div>
+	</div>
+	-->
+	<div class="container">
+
+			<h2>Telemedicine</h2>
+			
+		<div class="table-responsive table-scroll" id="table-scroll">
+				<table class="table table-sm table-striped main-table" id="main-table">
+					<thead class="thead-dark">
+						<tr id="header" class="row"></tr>
+					</thead>
+			
+					<tbody id="rBody"></tbody>
+				</table>
+			</div>
+	</div>
+	<script src="GetSheetDone.js"></script>
+    <script>
+        const $key = document.getElementById('key'),
+	$sheetNum = document.getElementById('sheetNum'),
+	$form = document.getElementById('theForm'),
+	$output = document.getElementById('output');
+var header = document.getElementById('header');
+var rBody = document.getElementById('rBody');
+let key, sheetNum, sheetType;
+attachEvents();
+
+        // GetSheetDone(KEY, 1, false, true).then((data) => {
+        //     console.log('Data');
+        //     console.log(JSON.stringify(data));
+        // }).catch(err => {
+        //     console.log('Error');
+        //     console.log(err);
+        // })
+
+        function readValues() {
+	key = "1yLz3UlyoNrUEQxAazADkzUqZRY_dBt86ZNd9CZrjXs0";
+	sheetNum = 1;
+	sheetType = "raw";
+}
+
+function attachEvents() {
+	//            $form.onsubmit = function(ev) {
+	//                ev.preventDefault();
+	                readValues();
+	console.log(key, "sheet: " + sheetNum, sheetType);
+	let promise;
+	switch (sheetType) {
+		case 'cols':
+            promise = GetSheetDone.labeledCols(key, sheetNum);
+			break;
+		case 'cols-rows':
+            promise = GetSheetDone.labeledColsRows(key, sheetNum);
+			break;
+		case 'raw':
+        default:
+            promise = GetSheetDone.raw(key, sheetNum);
+			break;
+	}
+	
+	promise.then((data) => {
+//                    console.log(data);
+//                    console.log(data.data);
+//                    console.log(data.data.length);
+//                    console.log(data.data[0]);
+//                    $output.innerHTML = JSON.stringify(data);
+                    for(var i=0; i<data.data[0].length; i++) {
+                        console.log(data.data[0][i]);
+                        var headerCell = document.createElement("th");
+						headerCell.classList.add("col");
+                        headerCell.innerHTML = data.data[0][i];
+                        header.appendChild(headerCell);
+                    }
+                    for(var i=1; i<data.data.length; i++) {
+                        var cRow = document.createElement("tr");
+						cRow.classList.add("row");
+                        for(var j=0; j<data.data[i].length; j++) {
+                              console.log(data.data[i][j]);
+                            var bodyCell = document.createElement("td");
+							bodyCell.classList.add("col");
+                            if(data.data[i][j] != undefined){
+                            bodyCell.innerHTML = data.data[i][j];
+                            }
+                            else {
+                             bodyCell.innerHTML = "";   
+                            }
+                            cRow.appendChild(bodyCell);
+                        }
+                        rBody.appendChild(cRow);
+                    }
+                }).catch(err => {
+                    console.log('Error');
+                    console.log(err);
+                    $output.innerHTML = err.message;
+                })
+//            }
+        }
+    </script> 
+</body>
+</html>
