@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)https://elvery.net/demo/responsive-tables/#unseen -->
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -14,27 +13,183 @@
 	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link href="flip-scroll.css" rel="stylesheet">
-	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	  <script src="bootstrap.bundle.min.js"></script>
+
 	
 </head>
-<body>
-	<!--<div class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container-fluid"><a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		          </a>
-		          <a class="brand" href="https://elvery.net/demo/responsive-tables/#">Responsive Tables</a>
-				
-				<div class="nav-collapse">
-					<p class="navbar-text pull-right">collated by <a href="http://elvery.net/">Simon Elvery</a></p>
-				</div><!--/.nav-collapse --*>
+	<body>
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container"><a class="navbar-brand" href="#">Tandem Research</a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			
+			<div class="collapse navbar-collapse" id="navbarsExample07">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+					<li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>						
+					</li>
+				</ul>
 			</div>
+			
+			
 		</div>
+	</nav>
+	<script>
+$(document).ready(function(){
+    $("#option1").click(function(){
+     sheetNum = 1;// button(toggle)
+		clearcontent();
+		attachEvents();
+    });
+});
+
+$(document).ready(function(){
+    $("#option2").click(function(){
+     sheetNum = 2;// button(toggle)
+		clearcontent();
+		attachEvents();
+    });
+});
+$(document).ready(function(){
+    $("#option3").click(function(){
+     sheetNum = 3;// button(toggle)
+		clearcontent();
+		attachEvents();
+    });
+});
+$(document).ready(function(){
+    $("#option4").click(function(){
+     sheetNum = 4;// button(toggle)
+		clearcontent();
+		attachEvents();
+    });
+});
+$(document).ready(function(){
+    $("#option5").click(function(){
+     sheetNum = 5;// button(toggle)
+		clearcontent();
+		attachEvents();
+    });
+});
+$(document).ready(function(){
+    $("#option6").click(function(){
+     sheetNum = 6;// button(toggle)
+		clearcontent();
+		attachEvents();
+    });
+});
+$(document).ready(function(){
+    $("#option7").click(function(){
+     sheetNum = 7;// button(toggle)
+		clearcontent();
+		attachEvents();
+    });
+});
+
+
+$(document).on('change','#drop-down',function(){
+	console.log('You selected: ', this.value);
+	if(this.value==1) {
+		sheetNum = 1;
+		clearcontent();
+		attachEvents();
+	}
+	else if(this.value==2) {
+		sheetNum = 2;
+		clearcontent();
+		attachEvents();
+	}
+	else if(this.value==3) {
+		sheetNum = 3;
+		clearcontent();
+		attachEvents();
+	}
+	else if(this.value==4) {
+		sheetNum = 4;
+		clearcontent();
+		attachEvents();
+	}
+	else if(this.value==5) {
+		sheetNum = 5;
+		clearcontent();
+		attachEvents();
+	}
+	else if(this.value==6) {
+		sheetNum = 6;
+		clearcontent();
+		attachEvents();
+	}
+	else if(this.value==7) {
+		sheetNum = 7;
+		clearcontent();
+		attachEvents();
+	}
+});
+
+
+</script>
+	<div class="jumbotron p-4 p-md-5 mb-4 text-white bg-dark">
+			<div class="col-md-6 px-0">
+				<h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
+				
+				<p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+			</div>
 	</div>
-	-->
-	<div class="container">
+
+		<div class="container d-none d-md-block">
+			<!--<form id="theForm">-->
+			<label for="years1">Choose</label>
+			<div class=" btn-group-toggle" data-toggle="buttons">
+				<label class="btn btn-secondary active m-1">
+					<input type="radio" name="options" id="option1" autocomplete="off" checked> Telemedicine
+				</label>
+				<label class="btn btn-secondary m-1">
+					<input type="radio" name="options" id="option2" autocomplete="off"> Testing & Screen
+				</label>
+				<label class="btn btn-secondary m-1">
+					<input type="radio" name="options" id="option3" autocomplete="off"> Remote Health Patient Monitoring
+				</label>
+				<label class="btn btn-secondary m-1">
+					<input type="radio" name="options" id="option4" autocomplete="off"> Virus Mapping & Contact Tracing
+				</label>
+				<label class="btn btn-secondary m-1">
+					<input type="radio" name="options" id="option5" autocomplete="off"> Information & Alerts
+				</label>
+				<label class="btn btn-secondary m-1">
+					<input type="radio" name="options" id="option6" autocomplete="off"> Location Tracking & Quarantine Management
+				</label>
+				<label class="btn btn-secondary m-1">
+					<input type="radio" name="options" id="option7" autocomplete="off"> Miscellaneous
+				</label>
+		</div>
+			<!--</form>-->
+		</div>
+		<div class="container d-md-none">
+	<label for="years1">Choose</label>
+							
+							<select class="custom-select d-block w-100" id="drop-down" required>
+								<!--<option value="">Choose...</option>-->
+								
+								<option value="1">Telemedicine</option>
+								
+								<option value="2">Testing & Screen</option>
+								
+								<option value="3">Remote Health Patient Monitoring</option>
+																
+								<option value="4">Virus Mapping & Contact Tracing</option>
+								
+								<option value="5">Information & Alerts</option>
+								
+								<option value="6">Location Tracking & Quarantine Management</option>
+								
+								<option value="7">Miscellaneous</option>
+								
+							</select>
+		</div>
+		<div class="container">
 
 			<h2>Telemedicine</h2>
 			
@@ -56,7 +211,9 @@
 	$output = document.getElementById('output');
 var header = document.getElementById('header');
 var rBody = document.getElementById('rBody');
+	$but1 = document.getElementById('option1');
 let key, sheetNum, sheetType;
+sheetNum = 1;
 attachEvents();
 
         // GetSheetDone(KEY, 1, false, true).then((data) => {
@@ -70,15 +227,22 @@ attachEvents();
         function readValues() {
 //	key = "1yLz3UlyoNrUEQxAazADkzUqZRY_dBt86ZNd9CZrjXs0";
 	key = "168i8xNueyhr7uxuvJe4PFN7fa64wm0zpnYGyE5J_PCA";
-	sheetNum = 1;
+	sheetNum = sheetNum;
 	sheetType = "raw";
 }
+function clearcontent() { 
+            document.getElementById("header").innerHTML = "";
+			document.getElementById("rBody").innerHTML = ""; 	
+//			document.getElementsByClassName("thead").innerHTML = "";
+        }
+
 
 function attachEvents() {
-	//            $form.onsubmit = function(ev) {
-	//                ev.preventDefault();
-	                readValues();
-	console.log(key, "sheet: " + sheetNum, sheetType);
+//	            $but1.click = function(ev) {
+//	document.getElementsByName("options")[0].addEventListener("click", function(ev) {
+//	    ev.preventDefault();
+	    readValues();
+//	console.log(key, "sheet: " + sheetNum, sheetType);
 	let promise;
 	switch (sheetType) {
 		case 'cols':
@@ -94,13 +258,9 @@ function attachEvents() {
 	}
 	
 	promise.then((data) => {
-//                    console.log(data);
-//                    console.log(data.data);
-//                    console.log(data.data.length);
-//                    console.log(data.data[0]);
-//                    $output.innerHTML = JSON.stringify(data);
+
                     for(var i=0; i<data.data[0].length; i++) {
-                        console.log(data.data[0][i]);
+//                        console.log(data.data[0][i]);
                         var headerCell = document.createElement("th");
 						headerCell.classList.add("col");
                         headerCell.innerHTML = data.data[0][i];
@@ -110,7 +270,7 @@ function attachEvents() {
                         var cRow = document.createElement("tr");
 						cRow.classList.add("row");
                         for(var j=0; j<data.data[i].length; j++) {
-                              console.log(data.data[i][j]);
+//                              console.log(data.data[i][j]);
                             var bodyCell = document.createElement("td");
 							bodyCell.classList.add("col");
                             if(data.data[i][j] != undefined){
@@ -128,8 +288,9 @@ function attachEvents() {
                     console.log(err);
                     $output.innerHTML = err.message;
                 })
-//            }
+//            });
         }
     </script> 
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 </body>
 </html>
