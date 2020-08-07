@@ -26,17 +26,23 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 			
 			<div class="collapse navbar-collapse" id="navbarsExample07">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-					<li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>						
 					</li>
 				</ul>
 			</div>
-			
-			
 		</div>
 	</nav>
+
+	<div class="p-4 p-md-5 mb-4 text-white bg-dark">
+		<div class="container">
+				<div class="col-md-6 px-0">
+					<h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
+					
+					<p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+				</div>
+		</div>
+	</div>
 	<script>
 $(document).ready(function(){
     $("#option1").click(function(){
@@ -131,18 +137,9 @@ $(document).on('change','#drop-down',function(){
 
 
 </script>
-	<div class="jumbotron p-4 p-md-5 mb-4 text-white bg-dark">
-			<div class="col-md-6 px-0">
-				<h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
-				
-				<p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-			</div>
-	</div>
-
-		<div class="container d-none d-md-block">
-			<!--<form id="theForm">-->
+		<div class="container d-none d-md-block ">
 			<label for="years1">Choose</label>
-			<div class=" btn-group-toggle" data-toggle="buttons">
+			<div class=" btn-group-toggle mb-5" data-toggle="buttons">
 				<label class="btn btn-secondary active m-1">
 					<input type="radio" name="options" id="option1" autocomplete="off" checked> Telemedicine
 				</label>
@@ -164,37 +161,35 @@ $(document).on('change','#drop-down',function(){
 				<label class="btn btn-secondary m-1">
 					<input type="radio" name="options" id="option7" autocomplete="off"> Miscellaneous
 				</label>
+			</div>
 		</div>
-			<!--</form>-->
-		</div>
-		<div class="container d-md-none">
-	<label for="years1">Choose</label>
+		<div class="container d-md-none mb-5">
+			<label for="years1">Choose</label>
 							
-							<select class="custom-select d-block w-100" id="drop-down" required>
-								<!--<option value="">Choose...</option>-->
+				<select class="custom-select d-block w-100" id="drop-down" required>
 								
-								<option value="1">Telemedicine</option>
+					<option value="1">Telemedicine</option>
 								
-								<option value="2">Testing & Screen</option>
+					<option value="2">Testing & Screen</option>
 								
-								<option value="3">Remote Health Patient Monitoring</option>
+					<option value="3">Remote Health Patient Monitoring</option>
 																
-								<option value="4">Virus Mapping & Contact Tracing</option>
+					<option value="4">Virus Mapping & Contact Tracing</option>
 								
-								<option value="5">Information & Alerts</option>
+					<option value="5">Information & Alerts</option>
 								
-								<option value="6">Location Tracking & Quarantine Management</option>
+					<option value="6">Location Tracking & Quarantine Management</option>
 								
-								<option value="7">Miscellaneous</option>
+					<option value="7">Miscellaneous</option>
 								
-							</select>
+				</select>
 		</div>
 		<div class="container">
 
-			<h2>Telemedicine</h2>
+			<h2 id="sTitle">Telemedicine</h2>
 			
 		<div class="table-responsive table-scroll" id="table-scroll">
-				<table class="table table-sm table-striped main-table" id="main-table">
+				<table class="table table-sm main-table" id="main-table">
 					<thead class="thead-dark">
 						<tr id="header" class="row"></tr>
 					</thead>
@@ -205,60 +200,54 @@ $(document).on('change','#drop-down',function(){
 	</div>
 	<script src="GetSheetDone.js"></script>
     <script>
-        const $key = document.getElementById('key'),
+    const $key = document.getElementById('key'),
 	$sheetNum = document.getElementById('sheetNum'),
 	$form = document.getElementById('theForm'),
 	$output = document.getElementById('output');
-var header = document.getElementById('header');
-var rBody = document.getElementById('rBody');
+	var header = document.getElementById('header');
+	var rBody = document.getElementById('rBody');
 	$but1 = document.getElementById('option1');
-let key, sheetNum, sheetType;
-sheetNum = 1;
-attachEvents();
+	$sTitle = document.getElementById('sTitle');
+	let key, sheetNum, sheetType;
+	sheetNum = 1;
+	attachEvents();
 
-        // GetSheetDone(KEY, 1, false, true).then((data) => {
-        //     console.log('Data');
-        //     console.log(JSON.stringify(data));
-        // }).catch(err => {
-        //     console.log('Error');
-        //     console.log(err);
-        // })
-
-        function readValues() {
-//	key = "1yLz3UlyoNrUEQxAazADkzUqZRY_dBt86ZNd9CZrjXs0";
-	key = "168i8xNueyhr7uxuvJe4PFN7fa64wm0zpnYGyE5J_PCA";
-	sheetNum = sheetNum;
-	sheetType = "raw";
-}
-function clearcontent() { 
-            document.getElementById("header").innerHTML = "";
-			document.getElementById("rBody").innerHTML = ""; 	
-//			document.getElementsByClassName("thead").innerHTML = "";
-        }
-
-
-function attachEvents() {
-//	            $but1.click = function(ev) {
-//	document.getElementsByName("options")[0].addEventListener("click", function(ev) {
-//	    ev.preventDefault();
-	    readValues();
-//	console.log(key, "sheet: " + sheetNum, sheetType);
-	let promise;
-	switch (sheetType) {
-		case 'cols':
-            promise = GetSheetDone.labeledCols(key, sheetNum);
-			break;
-		case 'cols-rows':
-            promise = GetSheetDone.labeledColsRows(key, sheetNum);
-			break;
-		case 'raw':
-        default:
-            promise = GetSheetDone.raw(key, sheetNum);
-			break;
+	function readValues() {
+	//	key = "1yLz3UlyoNrUEQxAazADkzUqZRY_dBt86ZNd9CZrjXs0";
+		key = "168i8xNueyhr7uxuvJe4PFN7fa64wm0zpnYGyE5J_PCA";
+		sheetNum = sheetNum;
+		sheetType = "raw";
 	}
-	
-	promise.then((data) => {
 
+	function clearcontent() { 
+	    document.getElementById("header").innerHTML = "";
+		document.getElementById("rBody").innerHTML = ""; 	
+	}
+
+
+	function attachEvents() {
+	//	$but1.click = function(ev) {
+	//	document.getElementsByName("options")[0].addEventListener("click", function(ev) {
+	//	ev.preventDefault();
+		readValues();
+	//	console.log(key, "sheet: " + sheetNum, sheetType);
+		let promise;
+		switch (sheetType) {
+			case 'cols':
+	            promise = GetSheetDone.labeledCols(key, sheetNum);
+				break;
+			case 'cols-rows':
+	            promise = GetSheetDone.labeledColsRows(key, sheetNum);
+				break;
+			case 'raw':
+	        default:
+	            promise = GetSheetDone.raw(key, sheetNum);
+				break;
+		}
+	
+		promise.then((data) => {
+					console.log(data.data[3].length);
+					$sTitle.innerHTML = data.title;
                     for(var i=0; i<data.data[0].length; i++) {
 //                        console.log(data.data[0][i]);
                         var headerCell = document.createElement("th");
@@ -269,10 +258,20 @@ function attachEvents() {
                     for(var i=1; i<data.data.length; i++) {
                         var cRow = document.createElement("tr");
 						cRow.classList.add("row");
-                        for(var j=0; j<data.data[i].length; j++) {
+						if(data.data[i].length == 1) {
+//							bodyCell.classList.add("subhead");
+							console.log(data.data[i]);
+							cRow.classList.add("subhead");
+						}
+						   for(var j=0; j<data.data[i].length; j++) {
 //                              console.log(data.data[i][j]);
                             var bodyCell = document.createElement("td");
 							bodyCell.classList.add("col");
+//							if(data.data[i].length == 1) {
+//								bodyCell.classList.add("subhead");
+//								console.log(data.data[i]);
+//							}
+							
                             if(data.data[i][j] != undefined){
                             bodyCell.innerHTML = data.data[i][j];
                             }
@@ -289,7 +288,7 @@ function attachEvents() {
                     $output.innerHTML = err.message;
                 })
 //            });
-        }
+    }
     </script> 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 </body>

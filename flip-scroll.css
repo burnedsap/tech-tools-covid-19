@@ -33,6 +33,14 @@ table, tr, td { margin: 0; padding: 0; border: 0; }
 		overflow-y: /*hidden*/;
     }
     
+    td:first-child {
+      font-weight: bold
+    }
+    .subhead {
+		background: #343A40;
+		color: white;
+	}
+    
 /*    th:first-child, td:first-child
 {
   position:sticky;
