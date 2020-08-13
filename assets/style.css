@@ -1,0 +1,283 @@
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-Extrathin.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-Extrathin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Extra Thin.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-Extrathin.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 100;
+font-style: normal;
+font-display: swap;
+}
+
+/* Averta Extra Thin Italic */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-ExtrathinItalic.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-ExtrathinItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Extra Thin Italic.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-ExtrathinItalic.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 100;
+font-style: italic;
+font-display: swap;
+}
+
+/* Averta Thin */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-Thin.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Thin.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-Thin.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 200;
+font-style: normal;
+font-display: swap;
+}
+
+/* Averta Thin Italic */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-ThinItalic.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-ThinItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Thin Italic.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-ThinItalic.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 200;
+font-style: italic;
+font-display: swap;
+}
+
+/* Averta Light */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-Light.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Light.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-Light.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 300;
+font-style: normal;
+font-display: swap;
+}
+
+/* Averta Light Italic */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-LightItalic.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Light Italic.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-LightItalic.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 300;
+font-style: italic;
+font-display: swap;
+}
+
+/* Averta Regular */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-Regular.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Regular.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 400;
+font-style: normal;
+font-display: swap;
+}
+
+/* Averta Regular Italic */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-RegularItalic.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Regular Italic.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-RegularItalic.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 400;
+font-style: italic;
+font-display: swap;
+}
+
+/* Averta Semibold */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-Semibold.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Semibold.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-Semibold.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 500;
+font-style: normal;
+font-display: swap;
+}
+
+/* Averta Semibold Italic */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-SemiboldItalic.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-SemiboldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Semibold Italic.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-SemiboldItalic.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 600;
+font-style: italic;
+font-display: swap;
+}
+
+/* Averta Bold */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-Bold.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Bold.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 700;
+font-style: normal;
+font-display: swap;
+}
+
+/* Averta Bold Italic */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-BoldItalic.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Bold Italic.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-BoldItalic.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 700;
+font-style: italic;
+font-display: swap;
+}
+
+/* Averta Extra Bold */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-Extrabold.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-Extrabold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Extra Bold.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-Extrabold.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 800;
+font-style: normal;
+font-display: swap;
+}
+
+/* Averta Extra Bold italic */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-ExtraboldItalic.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-ExtraboldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/hinted-Averta-ExtraBoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-ExtraboldItalic.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 800;
+font-style: italic;
+font-display: swap;
+}
+
+/* Averta Black */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-Black.ttf'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-Black.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Black.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-Black.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 900;
+font-style: normal;
+font-display: swap;
+}
+
+/* Averta Black Italic */
+
+@font-face {
+font-family: Averta;
+src: url('eot/hinted-Averta-BlackItalic.eot'); /* IE9 Compat Modes */
+src: url('eot/hinted-Averta-BlackItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('woff2/Averta Black Italic.woff2') format('woff2'), /* Super Modern Browsers */
+			url('woff/hinted-Averta-BlackItalic.woff') format('woff'); /* Pretty Modern Browsers */
+font-weight: 900;
+font-style: italic;
+font-display: swap;
+}
+
+body {
+	padding-bottom: 20px;
+	  /*font-family: 'Noto Serif', serif;*/
+	font-family: Averta;
+}
+
+.display-4 {
+	font-family: Averta;
+	font-weight: 700;
+	/*font-size: 40px;*/
+}
+
+.short-line-yellow {
+	width: 2rem;
+	height: 7px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	background-color: #ffda44;
+}
+.navbar {
+	/*margin-bottom: 20px;*/
+}
+
+body {
+	/*padding-top: 60px;*/
+}
+
+table {
+	margin: 0;
+	width: 100%;
+	font-size: 12px;
+	font-family: 'Noto Serif';
+}
+
+td:first-child {
+	/*	  background: gray;*/
+	  /*color: white;*/
+	font-weight: bold;
+	font-family: Averta;
+}
+
+.thead-dark {
+	font-family: Averta;
+	font-size: 14px;
+}
+
+td, th {
+	text-align: left;
+}
+
+h2, h3 {
+	margin-bottom: 1em;
+}
+
+section {
+	padding-top: 40px;
+}
+
+table, tr, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.table-responsive {
+	overflow: visible;
+	overflow-y: /*hidden*/;
+}
+
+.subhead {
+	background: #343A40;
+	color: white;
+}
+    
+.footer-body {
+	/*font-family: 'Noto Serif';*/
+}

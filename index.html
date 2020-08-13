@@ -3,27 +3,29 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <title>Responsive Tables Demo</title>
+    <title>Tech Tools For COVID-19</title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<meta name="description" content="A demo of some techniques for developing responsive tables.">
+	<meta name="description" content="A rapid review of the different tech tools being deployed to supplement and augment the public health response to the COVID-19 crisis in India.">
 	
-	<meta name="author" content="Simon Elvery">
+	<meta name="author" content="Tandem Research">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	
 	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link href="flip-scroll.css" rel="stylesheet">
+	<link href="assets/style.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	  <script src="bootstrap.bundle.min.js"></script>
-
+	  <script src="assets/bootstrap.bundle.min.js"></script>
 	
 </head>
 	<body>
 		
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
 		<div class="container justify-content-center">
 			<!--<div class="justify-content-center">-->
-				<a class="navbar-brand" href="#"><img src="assets/Logo.svg" alt="" width="120" height="auto"></a>
+				<a class="navbar-brand" href="#"><img src="assets/Logo.svg" alt="" width="110" height="auto"></a>
 			<!--</div>-->
 			
 			<!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>-->
@@ -37,15 +39,20 @@
 		</div>
 	</nav>
 
-	<div class="p-4 p-md-5 mb-4 text-white bg-dark">
-		<div class="container">
-				<div class="col-md-8 px-0">
-					<h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
-					
-					<p class="lead my-3">There has been an avalanche of apps and technology tools across the world in response to the coronavirus pandemic. India, too has focused efforts on tech solutions that have zeroed in on not only automating contact tracing but various types of tech to aid in the state efforts to fight covid-19. While these tech solutions have received a huge amount of media attention, there are numerous concerns such as misidentification, violations of data protection and privacy rights and surveillance that arise. In an attempt to draw attention to the plethora of tech tools in addition to the widely known surveillance based contact tracing apps, this datasheet provides a rapid review of the different tech tools being deployed to supplement and augment the public health response to the covid-19 crisis in India. </p>
+	<div class="p-4 p-md-5 mb-4">
+		<div class="container ">
+				<div class="row">
+					<div class="col-md">
+						<h1 class="display-4">Tech Tools For COVID-19</h1>
+						<div class="short-line-yellow"></div>
+					</div>
+					<div class="col-md">
+						<p>There has been an avalanche of apps and technology tools across the world in response to the coronavirus pandemic. India, too has focused efforts on tech solutions that have zeroed in on not only automating contact tracing but various types of tech to aid in the state efforts to fight COVID-19. While these tech solutions have received a huge amount of media attention, there are numerous concerns such as misidentification, violations of data protection and privacy rights and surveillance that arise. In an attempt to draw attention to the plethora of tech tools in addition to the widely known surveillance based contact tracing apps, this datasheet provides a rapid review of the different tech tools being deployed to supplement and augment the public health response to the COVID-19 crisis in India. </p>
+					</div>
 				</div>
 		</div>
 	</div>
+	
 	<script>
 $(document).ready(function(){
     $("#option1").click(function(){
@@ -141,7 +148,7 @@ $(document).on('change','#drop-down',function(){
 
 </script>
 		<div class="container d-none d-md-block ">
-			<label for="years1">Choose</label>
+			<label for="years1">Choose a category:</label>
 			<div class=" btn-group-toggle mb-5" data-toggle="buttons">
 				<label class="btn btn-secondary active m-1">
 					<input type="radio" name="options" id="option1" autocomplete="off" checked> Telemedicine
@@ -202,7 +209,7 @@ $(document).on('change','#drop-down',function(){
 			</div>
 	</div>
 	
-	<script src="GetSheetDone.js"></script>
+	<script src="assets/GetSheetDone.js"></script>
     <script>
     const $key = document.getElementById('key'),
 	$sheetNum = document.getElementById('sheetNum'),
@@ -300,7 +307,7 @@ $(document).on('change','#drop-down',function(){
 		<footer class="pt-4 my-md-5 pt-md-5 border-top">
 			<div class="row">
 				<div class="col-12 col-md">
-				<img class="mb-2" src="assets/Logo.svg" alt="" width="150" height="auto">
+					<a class="text-muted" target="_blank" href="https://tandemresearch.org/"><img class="mb-2" src="assets/Logo.svg" alt="" width="150" height="auto"></a>
 				<!--<small class="d-block mb-3 text-muted">&copy; 2017-2020</small>-->
 				</div>
 				
@@ -308,18 +315,17 @@ $(document).on('change','#drop-down',function(){
 				<div class="col-9 col-md">
 					<h5>Links</h5>
 					
-					<ul class="list-unstyled text-small">
+					<ul class="list-unstyled text-small footer-body">
+						<li><a class="text-muted" target="_blank" href="https://tandemresearch.org/">Homepage</a></li>
 						<li><a class="text-muted" target="_blank" href="https://twitter.com/tandem_research">Twitter</a></li>
-						<li class="text-muted"><u>hello@tandemresearch.org</u></li>
-						<!--<li><a class="text-muted" href="#">Privacy</a></li>-->
-						<!--<li><a class="text-muted" href="#">Terms</a></li>-->
+						<li><a class="text-muted" target="_blank" href="mailto:hello@tandemresearch.org">hello@tandemresearch.org</a></li>
 					</ul>
 				</div>
 				
 				<div class="col-9 col-md">
 					<h5>About</h5>
 					
-					<p class="text-muted">Tandem Research is an interdisciplinary research collective that generates policy insights at the interface of technology, society, and sustainability. Our work seeks to ensure that no one gets left behind in the technology transitions that will shape India’s future.</p>
+					<p class="text-muted footer-body">Tandem Research is an interdisciplinary research collective that generates policy insights at the interface of technology, society, and sustainability. Our work seeks to ensure that no one gets left behind in the technology transitions that will shape India’s future.</p>
 				</div>
 			</div>
 		</footer>
