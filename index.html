@@ -107,7 +107,6 @@ $(document).ready(function(){
 
 
 $(document).on('change','#drop-down',function(){
-	console.log('You selected: ', this.value);
 	if(this.value==1) {
 		sheetNum = 1;
 		clearcontent();
@@ -224,7 +223,6 @@ $(document).on('change','#drop-down',function(){
 	attachEvents();
 
 	function readValues() {
-	//	key = "1yLz3UlyoNrUEQxAazADkzUqZRY_dBt86ZNd9CZrjXs0";
 		key = "168i8xNueyhr7uxuvJe4PFN7fa64wm0zpnYGyE5J_PCA";
 		sheetNum = sheetNum;
 		sheetType = "raw";
@@ -237,11 +235,7 @@ $(document).on('change','#drop-down',function(){
 
 
 	function attachEvents() {
-	//	$but1.click = function(ev) {
-	//	document.getElementsByName("options")[0].addEventListener("click", function(ev) {
-	//	ev.preventDefault();
 		readValues();
-	//	console.log(key, "sheet: " + sheetNum, sheetType);
 		let promise;
 		switch (sheetType) {
 			case 'cols':
@@ -257,10 +251,8 @@ $(document).on('change','#drop-down',function(){
 		}
 	
 		promise.then((data) => {
-					console.log(data.data[3].length);
 					$sTitle.innerHTML = data.title;
                     for(var i=0; i<data.data[0].length; i++) {
-//                        console.log(data.data[0][i]);
                         var headerCell = document.createElement("th");
 						headerCell.classList.add("col");
                         headerCell.innerHTML = data.data[0][i];
@@ -270,19 +262,11 @@ $(document).on('change','#drop-down',function(){
                         var cRow = document.createElement("tr");
 						cRow.classList.add("row");
 						if(data.data[i].length == 1) {
-//							bodyCell.classList.add("subhead");
-							console.log(data.data[i]);
 							cRow.classList.add("subhead");
 						}
 						   for(var j=0; j<data.data[i].length; j++) {
-//                              console.log(data.data[i][j]);
                             var bodyCell = document.createElement("td");
 							bodyCell.classList.add("col");
-//							if(data.data[i].length == 1) {
-//								bodyCell.classList.add("subhead");
-//								console.log(data.data[i]);
-//							}
-							
                             if(data.data[i][j] != undefined){
                             bodyCell.innerHTML = data.data[i][j];
                             }
@@ -294,11 +278,10 @@ $(document).on('change','#drop-down',function(){
                         rBody.appendChild(cRow);
                     }
                 }).catch(err => {
-                    console.log('Error');
-                    console.log(err);
+//                    console.log('Error');
+//                    console.log(err);
                     $output.innerHTML = err.message;
                 })
-//            });
     }
     </script> 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -308,7 +291,7 @@ $(document).on('change','#drop-down',function(){
 			<div class="row">
 				<div class="col-12 col-md">
 					<a class="text-muted" target="_blank" href="https://tandemresearch.org/"><img class="mb-2" src="assets/Logo.svg" alt="" width="150" height="auto"></a>
-				<!--<small class="d-block mb-3 text-muted">&copy; 2017-2020</small>-->
+				<small class="d-block mb-3 text-muted">Tandem Research &copy; 2020</small>
 				</div>
 				
 				
