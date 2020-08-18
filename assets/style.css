@@ -204,6 +204,23 @@ font-style: italic;
 font-display: swap;
 }
 
+@media (max-width: 500px) {
+	
+	body {
+		/*background: red;*/
+	}
+	.container .table {
+		font-size: 10px;
+		font-family: 'Noto Serif';
+	}
+	.container td:first-child {
+		font-size: 11px;
+	}
+	.container .thead-dark {
+		font-size: 12px;
+	}
+}
+
 body {
 	padding-bottom: 20px;
 	  /*font-family: 'Noto Serif', serif;*/
@@ -223,6 +240,7 @@ body {
 	margin-bottom: 1rem;
 	background-color: #ffda44;
 }
+
 .navbar {
 	/*margin-bottom: 20px;*/
 }
@@ -243,11 +261,12 @@ td:first-child {
 	  /*color: white;*/
 	font-weight: bold;
 	font-family: Averta;
+	font-size: 13px;
 }
 
 .thead-dark {
 	font-family: Averta;
-	font-size: 14px;
+	font-size: 13px;
 }
 
 td, th {
@@ -277,7 +296,7 @@ table, tr, td {
 	background: #343A40;
 	color: white;
 }
-    
+
 .footer-body {
 	/*font-family: 'Noto Serif';*/
 }
