@@ -299,6 +299,10 @@ table, tr, td {
 	color: white;
 }
 
+.drop-down {
+	font-family: Averta;
+}
+
 .footer-body {
 	/*font-family: 'Noto Serif';*/
 }
