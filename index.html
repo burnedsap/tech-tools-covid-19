@@ -40,7 +40,8 @@
 						<div class="short-line-yellow"></div>
 					</div>
 					<div class="col-md">
-						<p>There has been an avalanche of apps and technology tools across the world in response to the coronavirus pandemic. India, too has focused efforts on tech solutions that have zeroed in on not only automating contact tracing but various types of tech to aid in the state efforts to fight COVID-19. While these tech solutions have received a huge amount of media attention, there are numerous concerns such as misidentification, violations of data protection and privacy rights and surveillance that arise. In an attempt to draw attention to the plethora of tech tools in addition to the widely known surveillance based contact tracing apps, this datasheet provides a rapid review of the different tech tools being deployed to supplement and augment the public health response to the COVID-19 crisis in India. </p>
+						<p>Governments around the world are deploying technological tools to manage the Covid-19 pandemic.  Much of media and policy attention in India has focused on Aarogya Setu - an app for digital contact tracing. However, many of the other tech tools in use also deserve close scrutiny, as they raise similar concerns around privacy, accountability, inclusivity, and misuse. Beyond highlighting specific benefits and harms these tools pose for managing the Covid-19 pandemic, this review also serves as a glimpse into the rapidly evolving landscape of digital health in India. </p>
+						<p>Please do see the <a href="https://tandemresearch.org/assets/Tech-Tools-for-Covid19-report_18.8.20.pdf" target="_blank">accompanying report</a> for more details.</p>
 					</div>
 				</div>
 		</div>
@@ -90,13 +91,13 @@ $(document).ready(function(){
 		attachEvents();
     });
 });
-$(document).ready(function(){
-    $("#option7").click(function(){
-     sheetNum = 7;// button(toggle)
-		clearcontent();
-		attachEvents();
-    });
-});
+// $(document).ready(function(){
+//     $("#option7").click(function(){
+//      sheetNum = 7;// button(toggle)
+// 		clearcontent();
+// 		attachEvents();
+//     });
+// });
 
 
 $(document).on('change','#drop-down',function(){
@@ -130,11 +131,11 @@ $(document).on('change','#drop-down',function(){
 		clearcontent();
 		attachEvents();
 	}
-	else if(this.value==7) {
-		sheetNum = 7;
-		clearcontent();
-		attachEvents();
-	}
+// 	else if(this.value==7) {
+// 		sheetNum = 7;
+// 		clearcontent();
+// 		attachEvents();
+// 	}
 });
 
 
@@ -160,9 +161,9 @@ $(document).on('change','#drop-down',function(){
 				<label class="btn btn-secondary m-1">
 					<input type="radio" name="options" id="option6" autocomplete="off"> Location Tracking & Quarantine Management
 				</label>
-				<label class="btn btn-secondary m-1">
+<!-- 				<label class="btn btn-secondary m-1">
 					<input type="radio" name="options" id="option7" autocomplete="off"> Miscellaneous
-				</label>
+				</label> -->
 			</div>
 		</div>
 		<div class="container d-md-none mb-5">
