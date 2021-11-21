@@ -1,309 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>Tech Tools For COVID-19</title>
-	
+
+	<title>Tech Tools For COVID-19</title>
+
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 	<link rel="manifest" href="assets/favicon/site.webmanifest">
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<meta name="description" content="A rapid review of the different tech tools being deployed to supplement and augment the public health response to the COVID-19 crisis in India.">
-	
+
+	<meta name="description"
+		content="A rapid review of the different tech tools being deployed to supplement and augment the public health response to the COVID-19 crisis in India.">
+
 	<meta name="author" content="Tandem Research">
-		
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	  <script src="assets/bootstrap.bundle.min.js"></script>
-	  
-	  <link href="assets/style.css" rel="stylesheet">
-	
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="assets/bootstrap.bundle.min.js"></script>
+
+	<link href="assets/style.css" rel="stylesheet">
+	<script type='text/javascript' src='config.js'></script>
+
 </head>
-	<body>
-		
+
+<body>
+
 	<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
 		<div class="container justify-content-center">
-				<img class="navbar-brand" src="assets/Logo.svg" alt="" width="110" height="auto">
+			<img class="navbar-brand" src="assets/Logo.svg" alt="" width="110" height="auto">
 		</div>
 	</nav>
 
 	<div class="p-4 p-md-5 mb-4">
 		<div class="container ">
-				<div class="row">
-					<div class="col-md">
-						<h1 class="display-4">Tech Tools For COVID-19</h1>
-						<div class="short-line-yellow"></div>
-					</div>
-					<div class="col-md">
-						<p>Governments around the world are deploying technological tools to manage the Covid-19 pandemic.  Much of media and policy attention in India has focused on Aarogya Setu - an app for digital contact tracing. However, many of the other tech tools in use also deserve close scrutiny, as they raise similar concerns around privacy, accountability, inclusivity, and misuse. Beyond highlighting specific benefits and harms these tools pose for managing the Covid-19 pandemic, this review also serves as a glimpse into the rapidly evolving landscape of digital health in India. </p>
-						<p>Please do see the <a href="https://tandemresearch.org/assets/Tech-Tools-for-Covid19-report_18.8.20.pdf" target="_blank">accompanying report</a> for more details.</p>
-					</div>
+			<div class="row">
+				<div class="col-md">
+					<h1 class="display-4">Tech Tools For COVID-19</h1>
+					<div class="short-line-yellow"></div>
 				</div>
+				<div class="col-md">
+					<p>Governments around the world are deploying technological tools to manage the Covid-19 pandemic.
+						Much of media and policy attention in India has focused on Aarogya Setu - an app for digital
+						contact tracing. However, many of the other tech tools in use also deserve close scrutiny, as
+						they raise similar concerns around privacy, accountability, inclusivity, and misuse. Beyond
+						highlighting specific benefits and harms these tools pose for managing the Covid-19 pandemic,
+						this review also serves as a glimpse into the rapidly evolving landscape of digital health in
+						India. </p>
+					<p>Please do see the <a
+							href="https://tandemresearch.org/assets/Tech-Tools-for-Covid19-report_18.8.20.pdf"
+							target="_blank">accompanying report</a> for more details.</p>
+				</div>
+			</div>
 		</div>
 	</div>
-	
+
 	<script>
-$(document).ready(function(){
-    $("#option1").click(function(){
-     sheetNum = 1;// button(toggle)
-		clearcontent();
-		attachEvents();
-    });
-});
+		$(document).ready(function () {
+			$("#option1").click(function () {
+				sheetNum = 1;// button(toggle)
+				clearcontent();
+				getData("Telemedicine");
+			});
+		});
 
-$(document).ready(function(){
-    $("#option2").click(function(){
-     sheetNum = 2;// button(toggle)
-		clearcontent();
-		attachEvents();
-    });
-});
-$(document).ready(function(){
-    $("#option3").click(function(){
-     sheetNum = 3;// button(toggle)
-		clearcontent();
-		attachEvents();
-    });
-});
-$(document).ready(function(){
-    $("#option4").click(function(){
-     sheetNum = 4;// button(toggle)
-		clearcontent();
-		attachEvents();
-    });
-});
-$(document).ready(function(){
-    $("#option5").click(function(){
-     sheetNum = 5;// button(toggle)
-		clearcontent();
-		attachEvents();
-    });
-});
-$(document).ready(function(){
-    $("#option6").click(function(){
-     sheetNum = 6;// button(toggle)
-		clearcontent();
-		attachEvents();
-    });
-});
-// $(document).ready(function(){
-//     $("#option7").click(function(){
-//      sheetNum = 7;// button(toggle)
-// 		clearcontent();
-// 		attachEvents();
-//     });
-// });
+		$(document).ready(function () {
+			$("#option2").click(function () {
+				sheetNum = 2;// button(toggle)
+				clearcontent();
+				getData("Testing and Screening");
+			});
+		});
+		$(document).ready(function () {
+			$("#option3").click(function () {
+				sheetNum = 3;// button(toggle)
+				clearcontent();
+				getData("Remote Health Patient Monitoring");
+			});
+		});
+		$(document).ready(function () {
+			$("#option4").click(function () {
+				sheetNum = 4;// button(toggle)
+				clearcontent();
+				getData("Virus Mapping and Contact Tracing");
+			});
+		});
+		$(document).ready(function () {
+			$("#option5").click(function () {
+				sheetNum = 5;// button(toggle)
+				clearcontent();
+				getData("Information and Alerts");
+			});
+		});
+		$(document).ready(function () {
+			$("#option6").click(function () {
+				sheetNum = 6;// button(toggle)
+				clearcontent();
+				getData("Location Tracking and Quarantine Management");
+			});
+		});
 
 
-$(document).on('change','#drop-down',function(){
-	if(this.value==1) {
-		sheetNum = 1;
-		clearcontent();
-		attachEvents();
-	}
-	else if(this.value==2) {
-		sheetNum = 2;
-		clearcontent();
-		attachEvents();
-	}
-	else if(this.value==3) {
-		sheetNum = 3;
-		clearcontent();
-		attachEvents();
-	}
-	else if(this.value==4) {
-		sheetNum = 4;
-		clearcontent();
-		attachEvents();
-	}
-	else if(this.value==5) {
-		sheetNum = 5;
-		clearcontent();
-		attachEvents();
-	}
-	else if(this.value==6) {
-		sheetNum = 6;
-		clearcontent();
-		attachEvents();
-	}
-// 	else if(this.value==7) {
-// 		sheetNum = 7;
-// 		clearcontent();
-// 		attachEvents();
-// 	}
-});
+		$(document).on('change', '#drop-down', function () {
+			if (this.value == 1) {
+				sheetNum = 1;
+				clearcontent();
+				getData("Telemedicine");
+			}
+			else if (this.value == 2) {
+				sheetNum = 2;
+				clearcontent();
+				getData("Testing and Screening");
+			}
+			else if (this.value == 3) {
+				sheetNum = 3;
+				clearcontent();
+				getData("Remote Health Patient Monitoring");
+			}
+			else if (this.value == 4) {
+				sheetNum = 4;
+				clearcontent();
+				getData("Virus Mapping and Contact Tracing");
+			}
+			else if (this.value == 5) {
+				sheetNum = 5;
+				clearcontent();
+				getData("Information and Alerts");
+			}
+			else if (this.value == 6) {
+				sheetNum = 6;
+				clearcontent();
+				getData("Location Tracking and Quarantine Management");
+			}
+		});
 
 
-</script>
-		<div class="container d-none d-md-block ">
-			<label for="years1">Choose a category:</label>
-			<div class=" btn-group-toggle mb-5" data-toggle="buttons">
-				<label class="btn btn-secondary active m-1">
-					<input type="radio" name="options" id="option1" autocomplete="off" checked> Telemedicine
-				</label>
-				<label class="btn btn-secondary m-1">
-					<input type="radio" name="options" id="option2" autocomplete="off"> Testing & Screen
-				</label>
-				<label class="btn btn-secondary m-1">
-					<input type="radio" name="options" id="option3" autocomplete="off"> Remote Health Patient Monitoring
-				</label>
-				<label class="btn btn-secondary m-1">
-					<input type="radio" name="options" id="option4" autocomplete="off"> Virus Mapping & Contact Tracing
-				</label>
-				<label class="btn btn-secondary m-1">
-					<input type="radio" name="options" id="option5" autocomplete="off"> Information & Alerts
-				</label>
-				<label class="btn btn-secondary m-1">
-					<input type="radio" name="options" id="option6" autocomplete="off"> Location Tracking & Quarantine Management
-				</label>
-<!-- 				<label class="btn btn-secondary m-1">
-					<input type="radio" name="options" id="option7" autocomplete="off"> Miscellaneous
-				</label> -->
-			</div>
+	</script>
+	<div class="container d-none d-md-block ">
+		<label for="years1">Choose a category:</label>
+		<div class=" btn-group-toggle mb-5" data-toggle="buttons">
+			<label class="btn btn-secondary active m-1">
+				<input type="radio" name="options" id="option1" autocomplete="off" checked> Telemedicine
+			</label>
+			<label class="btn btn-secondary m-1">
+				<input type="radio" name="options" id="option2" autocomplete="off"> Testing & Screening
+			</label>
+			<label class="btn btn-secondary m-1">
+				<input type="radio" name="options" id="option3" autocomplete="off"> Remote Health Patient Monitoring
+			</label>
+			<label class="btn btn-secondary m-1">
+				<input type="radio" name="options" id="option4" autocomplete="off"> Virus Mapping & Contact Tracing
+			</label>
+			<label class="btn btn-secondary m-1">
+				<input type="radio" name="options" id="option5" autocomplete="off"> Information & Alerts
+			</label>
+			<label class="btn btn-secondary m-1">
+				<input type="radio" name="options" id="option6" autocomplete="off"> Location Tracking & Quarantine
+				Management
+			</label>
 		</div>
-		<div class="container d-md-none mb-5">
-			<label for="years1">Choose</label>
-							
-				<select class="custom-select d-block w-100" id="drop-down" required>
-								
-					<option value="1">Telemedicine</option>
-								
-					<option value="2">Testing & Screen</option>
-								
-					<option value="3">Remote Health Patient Monitoring</option>
-																
-					<option value="4">Virus Mapping & Contact Tracing</option>
-								
-					<option value="5">Information & Alerts</option>
-								
-					<option value="6">Location Tracking & Quarantine Management</option>
-								
-					<option value="7">Miscellaneous</option>
-								
-				</select>
-		</div>
-		<div class="container">
-
-			<h2 id="sTitle">Telemedicine</h2>
-			
-			<div>
-				<table class="table table-sm main-table" id="main-table">
-					<thead class="thead-dark">
-						<tr id="header" class="row"></tr>
-					</thead>
-			
-					<tbody id="rBody"></tbody>
-				</table>
-			</div>
 	</div>
-	
-	<script src="assets/GetSheetDone.js"></script>
-    <script>
-    const $key = document.getElementById('key'),
-	$sheetNum = document.getElementById('sheetNum'),
-	$form = document.getElementById('theForm'),
-	$output = document.getElementById('output');
-	var header = document.getElementById('header');
-	var rBody = document.getElementById('rBody');
-	$but1 = document.getElementById('option1');
-	$sTitle = document.getElementById('sTitle');
-	let key, sheetNum, sheetType;
-	sheetNum = 1;
-	attachEvents();
+	<div class="container d-md-none mb-5">
+		<label for="years1">Choose</label>
 
-	function readValues() {
-		key = "168i8xNueyhr7uxuvJe4PFN7fa64wm0zpnYGyE5J_PCA"; //contact us at hello@tandemresearch.org for the data set!
-		sheetNum = sheetNum;
-		sheetType = "raw";
-	}
+		<select class="custom-select d-block w-100" id="drop-down" required>
 
-	function clearcontent() { 
-	    document.getElementById("header").innerHTML = "";
-		document.getElementById("rBody").innerHTML = ""; 	
-	}
+			<option value="1">Telemedicine</option>
+
+			<option value="2">Testing & Screening</option>
+
+			<option value="3">Remote Health Patient Monitoring</option>
+
+			<option value="4">Virus Mapping & Contact Tracing</option>
+
+			<option value="5">Information & Alerts</option>
+
+			<option value="6">Location Tracking & Quarantine Management</option>
+
+		</select>
+	</div>
+	<div class="container">
+		<h2 id="sTitle">Telemedicine</h2>
+		<div>
+			<table class="table table-sm main-table" id="main-table">
+				<thead class="thead-dark">
+					<tr id="header" class="row"></tr>
+				</thead>
+
+				<tbody id="rBody"></tbody>
+			</table>
+		</div>
+	</div>
+
+	<!-- <script src="assets/GetSheetDone.js"></script> -->
+	<script>
+		var mykey = config.apiKEY;
+		const $key = document.getElementById('key'),
+			$sheetNum = document.getElementById('sheetNum'),
+			$form = document.getElementById('theForm'),
+			$output = document.getElementById('output');
+		var header = document.getElementById('header');
+		var rBody = document.getElementById('rBody');
+		$but1 = document.getElementById('option1');
+		$sTitle = document.getElementById('sTitle');
+		let key, sheetNum, sheetType;
+		sheetNum = 1;
+		getData("Telemedicine");
 
 
-	function attachEvents() {
-		readValues();
-		let promise;
-		switch (sheetType) {
-			case 'cols':
-	            promise = GetSheetDone.labeledCols(key, sheetNum);
-				break;
-			case 'cols-rows':
-	            promise = GetSheetDone.labeledColsRows(key, sheetNum);
-				break;
-			case 'raw':
-	        default:
-	            promise = GetSheetDone.raw(key, sheetNum);
-				break;
+		function clearcontent() {
+			document.getElementById("header").innerHTML = "";
+			document.getElementById("rBody").innerHTML = "";
 		}
-	
-		promise.then((data) => {
-					$sTitle.innerHTML = data.title;
-                    for(var i=0; i<data.data[0].length; i++) {
-                        var headerCell = document.createElement("th");
-						headerCell.classList.add("col");
-                        headerCell.innerHTML = data.data[0][i];
-                        header.appendChild(headerCell);
-                    }
-                    for(var i=1; i<data.data.length; i++) {
-                        var cRow = document.createElement("tr");
-						cRow.classList.add("row");
-						if(data.data[i].length == 1) {
-							cRow.classList.add("subhead");
-						}
-						   for(var j=0; j<data.data[i].length; j++) {
-                            var bodyCell = document.createElement("td");
-							bodyCell.classList.add("col");
-                            if(data.data[i][j] != undefined){
-                            bodyCell.innerHTML = data.data[i][j];
-                            }
-                            else {
-                             bodyCell.innerHTML = "";   
-                            }
-                            cRow.appendChild(bodyCell);
-                        }
-                        rBody.appendChild(cRow);
-                    }
-                }).catch(err => {
-                    $output.innerHTML = err.message;
-                })
-    }
-    </script> 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	
+
+		function getData(ident) {
+			let url = 'https://sheets.googleapis.com/v4/spreadsheets/168i8xNueyhr7uxuvJe4PFN7fa64wm0zpnYGyE5J_PCA/values/' + ident + '?key='+mykey;
+			request = new XMLHttpRequest();
+			request.open("GET", url);
+			request.onload = function () {
+				if (request.status >= 200 && request.status < 400) {
+					// Success!
+					let data = JSON.parse(request.responseText);
+					loadIn(ident, data);
+				} else {
+					// We reached our target server, but it returned an error
+				}
+			};
+			request.onerror = function () {
+				// There was a connection error of some sort
+			};
+			request.send();
+		}
+
+		function loadIn(ident, data) {
+			$sTitle.innerHTML = ident;
+			let val = data.values;
+			for (var i = 0; i < val[0].length; i++) {
+				var headerCell = document.createElement("th");
+				headerCell.classList.add("col");
+				headerCell.innerHTML = val[0][i];
+				header.appendChild(headerCell);
+			}
+
+			for (var i = 1; i < val.length; i++) {
+				var cRow = document.createElement("tr");
+				cRow.classList.add("row");
+				if (val[i].length == 1) {
+					cRow.classList.add("subhead");
+				}
+				for (var j = 0; j < val[i].length; j++) {
+					var bodyCell = document.createElement("td");
+					bodyCell.classList.add("col");
+					if (val[i][j] != undefined) {
+						bodyCell.innerHTML = val[i][j];
+					}
+					else {
+						bodyCell.innerHTML = "";
+					}
+					cRow.appendChild(bodyCell);
+				}
+				rBody.appendChild(cRow);
+			}
+
+		}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+
 	<div class="container">
 		<footer class="pt-4 my-md-5 pt-md-5 border-top">
 			<div class="row">
 				<div class="col-12 col-md">
-					<a class="text-muted" target="_blank" href="https://tandemresearch.org/"><img class="mb-2" src="assets/Logo.svg" alt="" width="150" height="auto"></a>
-				<small class="d-block mb-3 text-muted">Tandem Research &copy; 2020</small>
+					<a class="text-muted" target="_blank" href="https://tandemresearch.org/"><img class="mb-2"
+							src="assets/Logo.svg" alt="" width="150" height="auto"></a>
+					<small class="d-block mb-3 text-muted">Tandem Research &copy; 2020</small>
 				</div>
-				
-				
+
+
 				<div class="col-9 col-md">
 					<h5>Links</h5>
-					
+
 					<ul class="list-unstyled text-small footer-body">
 						<li><a class="text-muted" target="_blank" href="https://tandemresearch.org/">Homepage</a></li>
-						<li><a class="text-muted" target="_blank" href="https://twitter.com/tandem_research">Twitter</a></li>
-						<li><a class="text-muted" target="_blank" href="mailto:hello@tandemresearch.org">hello@tandemresearch.org</a></li>
+						<li><a class="text-muted" target="_blank" href="https://twitter.com/tandem_research">Twitter</a>
+						</li>
+						<li><a class="text-muted" target="_blank"
+								href="mailto:hello@tandemresearch.org">hello@tandemresearch.org</a></li>
 					</ul>
 				</div>
-				
+
 				<div class="col-9 col-md">
 					<h5>About</h5>
-					
-					<p class="text-muted footer-body">Tandem Research is an interdisciplinary research collective that generates policy insights at the interface of technology, society, and sustainability. Our work seeks to ensure that no one gets left behind in the technology transitions that will shape India’s future.</p>
+
+					<p class="text-muted footer-body">Tandem Research is an interdisciplinary research collective that
+						generates policy insights at the interface of technology, society, and sustainability. Our work
+						seeks to ensure that no one gets left behind in the technology transitions that will shape
+						India’s future.</p>
 				</div>
 			</div>
 		</footer>
 	</div>
 </body>
+
 </html>
